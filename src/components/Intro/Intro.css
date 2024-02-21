@@ -1,0 +1,99 @@
+.Intro{
+    height: 100%;
+    width: 100vw;
+    max-width: 75vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.bg{
+    margin-top: 10%;
+    height: 35vw;
+    object-fit: cover;
+}
+.content{
+    margin-top: 20%;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.hello{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.Name{
+    font-weight: bold;
+    color:rgb(68, 89, 100);
+}
+.para{
+    font-size: small;
+    font-weight: bold;
+}
+.hbtn{
+    margin-top: 4rem;
+    background: rgba(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border: solid black 0.5px;
+    margin-right: 2rem;
+    padding-right:1.5rem;
+    border-radius: 2rem;
+    box-shadow: -2px 2px #888888;
+    transition: 0.25s;
+}
+.hbtn:hover{
+    background:rgba(255, 255, 255, 0.537);    
+
+}
+.hbtn:active{
+    box-shadow: none;
+    transform: translateY(3px);
+}
+.himg{
+    object-fit:cover;
+    margin: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
+@media screen and (max-width:1200px){
+    .content{
+        font-size: 4vw;
+        margin-top: 15%;
+    }
+    .hello{
+        font-size: 2vw;
+    }
+    .para{
+        font-size: 1vw;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .content{
+        font-size: 4vw;
+        margin-top: 10%;
+    }
+    .para{
+        font-size: 2vw;
+    }
+    .hbtn{
+        margin-top: 2rem;
+    }
+    .Intro{
+        height: 80%;
+    }
+}
+@media screen and (max-width:480px){
+    .bg{
+        display: none;
+    }
+    .content{
+        font-size: 7vw;
+    }
+    .hello,.para{
+        font-size: 3vw;
+    }
+    
+}
